@@ -1,0 +1,230 @@
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Inter', sans-serif;
+}
+body{
+    font-family: 'Inter', sans-serif;
+}
+
+p{
+    font-family: 'Inter', sans-serif;
+}
+.nameIndustry {
+    font-size: 30px;
+    font-weight: bold;
+    color:#45187E;
+    margin: 0px 0px 0px;
+}
+
+.headstyle{
+    font-size: 40px;
+    font-weight: 600;
+    color:#19110D;
+}
+
+.ShowRole li {
+    background: #E8E8E8;
+    border-radius: 40px;
+    padding: 10px 20px;
+    color: #19110D;
+    margin-right: 10px;
+    display: block;
+    margin-bottom:20px;
+}
+ul.ShowRole {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+}
+
+.headstyleSub{
+    font-size: 28px;
+    font-weight: 500;
+    color: #45187E;
+}
+.padd50{
+    padding: 30px 0;
+}
+.spaceChallengesHead{
+    margin-bottom: 40px;
+}
+.bgColor{
+    background-color: #F6F6F6;
+
+
+} .showtext img{width: 120px;margin-bottom: 10px;}
+.showtext {
+    background: rgb(74 74 74 / 50%);
+    padding: 10px;
+    position: absolute;
+    bottom: 0px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    width: 100%;
+    color:#fff;
+    font-size: 20px;
+}
+.MoreSuccess .imgradius{
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.MoreSuccess {
+    position: relative;
+    border-radius: 10px;
+    height: 360px;
+    overflow: hidden;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+.container-fluid{
+    padding: 0 60px;
+}
+.img-fluid{
+    width: 100%;;
+}
+.showfilter {
+    padding-left: 100px;
+}
+.videoimgbox {
+    margin-top: 40px;
+}
+.clienttestimonial .item img {
+    border-radius: 19.149px;
+    border: 0.957px solid #CAA3A3;
+    background: #FFF;
+}
+.clienttestimonial .exploreall.explorebutton {
+    position: relative;
+}
+.clienttestimonial .exploreall.explorebutton a {
+    position: absolute;
+    right: 0px;
+    background: #000;
+    padding: 10px;
+    border-radius: 10px;
+    border-radius: 50px;
+    background: #0F2A34;
+    top: -77px;
+}
+img {
+    height: auto;
+}
+.loopclienttest.owl-carousel.owl-theme.owl-loaded.owl-drag {
+    margin-top: 40px;
+}
+.clienttestimonial .owl-carousel .owl-dots {
+    text-align: center;
+    margin-top:20px;
+}
+.clienttestimonial .owl-carousel button.owl-dot {
+    background: #999;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.clienttestimonial .owl-carousel button.owl-dot.owl-dot.active {
+    background: #E9430E;
+}
+.showtext a {
+    color: #fff;
+}
+.imgbodrex img{
+    border-radius: 10px;
+}
+
+.videoimgboxs.imgbodrex iframe {
+    border-radius: 10px;
+    pointer-events: none;
+}
+.resultsBox{background: #000;color: #fff;border-radius: 10px;padding: 30px;padding-top: 130px;position: relative;height:100%}
+.bgcolorsresults .col-md-4 .resultsBoxShow:before{font-size: 100px;content: "01";position: absolute;top: -10px;color: #fff;font-weight: bold;opacity: 0.4;}
+ 
+.bgcolorsresults .col-md-4:nth-child(2) .resultsBoxShow:before{
+    content: "02";
+}
+
+.bgcolorsresults .col-md-4:nth-child(2) .resultsBox{
+    background: #45187E;
+}
+
+.bgcolorsresults .col-md-4:nth-child(3) .resultsBox{
+    color: #000;
+    background: #E8E8E8;
+}
+
+.bgcolorsresults .col-md-4:nth-child(3) .resultsBoxShow:before{
+    content: "03";
+    color: #19110D;
+    opacity: 0.1;
+}
+.banner-sec-logo {
+    width: 150px;
+}
+.solution_boxBox{
+    position: relative;
+}
+/*.solution_boxBox:before{
+    content: "";
+    border-bottom: 2px dashed #45187E;
+    width: 40%;
+    position: absolute;
+    left: 59%;
+    top: 29px;
+    z-index: -1;
+}*/
+.solution_boxBoxShow h3 {
+    position: relative;
+    top: 15px;
+    display: inline-block;
+    color: #45187E;
+    padding-right: 0;
+}
+.solution_boxBox {
+    position: relative;
+    margin-top: 41px;
+}
+span.counterNumber {
+    font-family: Inter;
+    font-size: 112px;
+    font-weight: 800;
+    line-height: 135.55px;
+    text-align: left;
+    color: #E8E8E8;
+    position: absolute;
+    top: -61px;
+    left: 0px;
+}
+
+@media(max-width: 767px){
+.container-fluid {
+    padding: 0 15px;
+}
+section.ornage-loan-ori.page-header-area.bg-img.lms {
+    padding: 80px 0px !important;
+}
+.showfilter {
+    padding-left: 0px;
+}
+.ShowRole li { 
+    padding: 3px 10px;
+     margin-right: 5px;
+     margin-bottom: 10px;
+}
+.bgcolorsresults .col-md-4 {
+    margin-bottom: 15px;
+}
+.clienttestimonial .exploreall.explorebutton a {
+    position: relative;
+
+    top: inherit;
+}
+.clienttestimonial .exploreall.explorebutton a img.entered {
+    width: 100px;
+}
+.solution_boxBox:before{
+display:none;
+}
+}
