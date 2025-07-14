@@ -514,14 +514,14 @@
     <section class="project-challenges-section padd50">
         <div class="container-fluid">
             <div class="text-center">
-                <div class="challenge-badge">
-                    <span>🛠️ Implementation Strategy</span>
+                <div class="implementation-badge">
+                    <span>⚙️ Implementation Strategy</span>
                 </div>
-                <h2 class="challenge-section-title">
-                    Project Challenges: Balancing Precision, Security & 
+                <h2 class="challenge-title">
+                    Project Challenges: Balancing Precision, Security &<br>
                     Adoption in <span class="orange-text">Legal Practice</span>
                 </h2>
-                <p class="challenge-section-description">
+                <p class="challenge-description">
                     Successfully implementing AI solutions across 100+ attorneys required careful attention to legal 
                     ethics, data security, and attorney buy-in while maintaining the highest standards of 
                     confidentiality.
@@ -529,61 +529,74 @@
             </div>
 
             <div class="row mt-5">
-                <div class="col-md-4">
-                    <div class="challenge-card confidentiality-bg">
-                        <div class="challenge-icon blue-icon">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" fill="#0EA5E9" stroke="white" stroke-width="1.5"/>
-                                <path d="M12 12C13.6569 12 15 10.6569 15 9C15 7.34315 13.6569 6 12 6C10.3431 6 9 7.34315 9 9C9 10.6569 10.3431 12 12 12Z" fill="white"/>
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <div class="challenge-card confidentiality-card">
+                        <div class="icon-container blue-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
                             </svg>
                         </div>
-                        <h3>Confidentiality Risks</h3>
-                        <div class="challenge-item">
-                            <span class="challenge-label">CHALLENGE</span>
+                        <h3 style="font-weight: 500;">Confidentiality Risks</h3>
+                        <div class="challenge-container">
+                            <div class="challenge-label">
+                                <span>CHALLENGE</span>
+                            </div>
                             <p>Client data exposure could violate ethics rules.</p>
                         </div>
-                        <div class="solution-item">
-                            <span class="solution-label">SOLUTION</span>
+                        <div class="solution-container">
+                            <div class="solution-label">
+                                <span>SOLUTION</span>
+                            </div>
                             <p>Implemented on-premises AI with zero-data retention and with HIPAA/GDPR-compliant encryption.</p>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-md-4">
-                    <div class="challenge-card resistance-bg">
-                        <div class="challenge-icon orange-icon">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" fill="#F97316" stroke="white" stroke-width="1.5"/>
-                                <path d="M12 12C13.6569 12 15 10.6569 15 9C15 7.34315 13.6569 6 12 6C10.3431 6 9 7.34315 9 9C9 10.6569 10.3431 12 12 12Z" fill="white"/>
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <div class="challenge-card attorney-card  text-center">
+                        <div class="icon-container orange-icon text-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                                <circle cx="12" cy="7" r="4"></circle>
                             </svg>
                         </div>
-                        <h3>Attorney Resistance</h3>
-                        <div class="challenge-item">
-                            <span class="challenge-label">CHALLENGE</span>
+                        <h3 style="font-weight: 500;">Attorney Resistance</h3>
+                        <div class="challenge-container">
+                            <div class="challenge-label">
+                                <span>CHALLENGE</span>
+                            </div>
                             <p>Skepticism about AI replacing legal judgment got the best out of the lawyers.</p>
                         </div>
-                        <div class="solution-item">
-                            <span class="solution-label">SOLUTION</span>
+                        <div class="solution-container">
+                            <div class="solution-label">
+                                <span>SOLUTION</span>
+                            </div>
                             <p>We allayed their fear by co-designing tools with senior partners and preserved human oversight at all stages.</p>
                         </div>
                     </div>
                 </div>
 
                 <div class="col-md-4">
-                    <div class="challenge-card integration-bg">
-                        <div class="challenge-icon purple-icon">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" fill="#8B5CF6" stroke="white" stroke-width="1.5"/>
-                                <path d="M4 6h16M4 10h16M4 14h16M4 18h16" stroke="white" stroke-width="1.5"/>
+                    <div class="challenge-card legacy-card">
+                        <div class="icon-container purple-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect>
+                                <rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect>
+                                <line x1="6" y1="6" x2="6.01" y2="6"></line>
+                                <line x1="6" y1="18" x2="6.01" y2="18"></line>
                             </svg>
                         </div>
-                        <h3>Legacy System Integration</h3>
-                        <div class="challenge-item">
-                            <span class="challenge-label">CHALLENGE</span>
+                        <h3 style="font-weight: 500">Legacy System Integration</h3>
+                        <div class="challenge-container">
+                            <div class="challenge-label">
+                                <span>CHALLENGE</span>
+                            </div>
                             <p>Critical data lived in siloed databases.</p>
                         </div>
-                        <div class="solution-item">
-                            <span class="solution-label">SOLUTION</span>
+                        <div class="solution-container">
+                            <div class="solution-label">
+                                <span>SOLUTION</span>
+                            </div>
                             <p>To overcome this challenge, we built API-first architecture syncing with Clio & NetDocuments.</p>
                         </div>
                     </div>

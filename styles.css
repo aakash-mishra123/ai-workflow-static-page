@@ -1069,7 +1069,7 @@ span.counterNumber {
 
 .ai-integration-title {
     font-size: 48px;
-    font-weight: 700;
+    font-weight: 500;
     color: #1a202c;
     line-height: 1.2;
     margin-bottom: 30px;
@@ -1831,64 +1831,50 @@ span.counterNumber {
 /* Project Challenges Section Styles */
 .project-challenges-section {
     padding: 80px 0;
-    /* max-width: 1200px; */
-    margin: 0 auto;
+    background-color: #ffffff;
 }
 
-.project-challenges-new-section .container-fluid {
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-.challenge-badge {
+.implementation-badge {
     display: inline-block;
-    background-color: #FEF3C7;
-    color: #F97316;
-    font-size: 14px;
+    background-color: #FFF5EB;
+    color: #FF5722;
+    font-size: 15px;
     font-weight: 600;
-    padding: 8px 16px;
-    border-radius: 100px;
+    padding: 10px 20px;
+    border-radius: 30px;
     margin-bottom: 24px;
+    box-shadow: 0 2px 5px rgba(255, 87, 34, 0.1);
 }
 
-.challenge-section-title {
-    font-size: 3rem;
-    font-weight: 400;
+.challenge-title {
+    font-size: 36px;
+    font-weight: 500;
     line-height: 1.3;
-    max-width: 900px;
+    max-width: 960px;
     margin: 0 auto 20px;
     color: #1E293B;
 }
 
-.project-challenges-section .orange-text {
+.orange-text {
     color: #FF5722;
 }
 
-.challenges-description {
-    font-size: 18px;
-    color: #4a5568;
+.challenge-description {
+    font-size: 16px;
+    color: #64748B;
+    margin: 0 auto 30px;
     line-height: 1.6;
-    max-width: 800px;
-    margin: 0 auto 60px;
-}
-
-.challenges-cards-row {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 24px;
-    max-width: 1100px;
-    margin: 0 auto;
 }
 
 .challenge-card {
-    background: #ffffff;
-    border-radius: 12px;
+    background-color: #ffffff;
+    border-radius: 16px;
     padding: 30px;
-    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
     height: 100%;
     position: relative;
     overflow: hidden;
-    z-index: 1;
+    transition: transform 0.2s ease;
 }
 
 .challenge-card:hover {
@@ -1906,62 +1892,32 @@ span.counterNumber {
     border-radius: 12px;
 }
 
-.confidentiality-bg::before {
-    background-image: url('./assets/confidentiality-bg.jpg');
+.confidentiality-card {
+    background-color: #F0F9FF;
 }
 
-.resistance-bg::before {
-    background-image: url('./assets/resistance-bg.jpg');
+.attorney-card {
+    background-color: #FFF7ED;
 }
 
-.integration-bg::before {
-    background-image: url('./assets/integration-bg.jpg');
+.legacy-card {
+    background-color: #F5F3FF;
 }
 
-.challenge-icon {
-    width: 48px;
-    height: 48px;
-    border-radius: 8px;
+.icon-container {
+    width: 56px;
+    height: 56px;
+    border-radius: 12px;
     display: flex;
     align-items: center;
-    margin-bottom: 10px;
+    justify-content: center;
+    margin-bottom: 20px;
 }
 
-.challenge-card-title {
-    font-size: 22px;
-    font-weight: 600;
-    color: #1a202c;
-    margin-bottom: 30px;
-}
-
-.challenge-item {
-    margin-bottom: 24px;
-}
-
-.challenge-item:last-child {
-    margin-bottom: 0;
-}
-
-.challenge-label {
-    display: flex;
-    align-items: center;
-    margin-bottom: 10px;
-}
-
-.challenge-dot {
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    margin-right: 8px;
-    flex-shrink: 0;
-}
-
-.challenge-dot-red {
-    background-color: #e53e3e;
-}
-
-.challenge-dot-green {
-    background-color: #38a169;
+.icon-container svg {
+    width: 28px;
+    height: 28px;
+    stroke: white;
 }
 
 .blue-icon {
@@ -1972,11 +1928,8 @@ span.counterNumber {
     background-color: #F97316;
 }
 
-.challenge-text {
-    font-size: 12px;
-    font-weight: 600;
-    letter-spacing: 0.5px;
-    color: #718096;
+.purple-icon {
+    background-color: #8B5CF6;
 }
 
 .challenge-description {
@@ -2130,7 +2083,6 @@ span.counterNumber {
     font-weight: 300;
     color: #1a202c;
     margin-bottom: 16px;
-    font-family: 'Sora', sans-serif;
 }
 
 .implementation-phases-description {
@@ -2186,37 +2138,30 @@ span.counterNumber {
     font-size: 12px;
     font-weight: 700;
     margin-bottom: 8px;
-    letter-spacing: 0.5px;
 }
 
-.phase-title {
-    font-size: 18px;
-    font-weight: 600;
-    color: #1a202c;
-    margin-bottom: 12px;
-    line-height: 1.3;
-    font-family: 'Sora', sans-serif;
+.challenge-label {
+    color: #EF4444;
 }
 
 .solution-label {
-    color: #22C55E;
+    color: #10B981;
 }
 
-.phase-duration {
-    font-size: 14px;
-    font-weight: 500;
-    color: #4a5568;
-    margin-bottom: 16px;
-    background: #f7fafc;
-    padding: 4px 12px;
-    border-radius: 20px;
-    display: inline-block;
+.challenge-container {
+    border-left: 2px solid #EF4444;
+    padding-left: 12px;
+    margin-bottom: 20px;
 }
 
+.solution-container {
+    border-left: 2px solid #10B981;
+    padding-left: 12px;
+}
 
-.challenge-item p, .solution-item p {
+.challenge-container p, .solution-container p {
     font-size: 15px;
-    line-height: 1.5;
+    line-height: 1.6;
     color: #475569;
     margin: 0;
 }
