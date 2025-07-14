@@ -336,7 +336,7 @@ span.counterNumber {
 }
 
 .hero-section .container-fluid {
-    max-width: 1200px;
+    /* max-width: 1200px; */
     margin: 0 auto;
 }
 
@@ -482,18 +482,21 @@ span.counterNumber {
 }
 
 .critical-challenge-badge {
-    display: inline-block;
-    margin-bottom: 30px;
+    display: inline-flex;
+    align-items: center;
+    background-color: rgba(155, 28, 28, 0.9);
+    color: white;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 6px 16px;
+    border-radius: 50px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(220, 38, 38, 0.3);
 }
 
 .critical-challenge-badge span {
-    background: #e53e3e;
-    color: white;
-    padding: 8px 20px;
-    border-radius: 6px;
-    font-size: 14px;
-    font-weight: 600;
-    display: inline-flex;
+    display: flex;
     align-items: center;
     gap: 8px;
 }
@@ -932,7 +935,7 @@ span.counterNumber {
 }
 
 /* Max-width constraints for all main content sections */
-.hero-section .container-fluid,
+.container-fluid,
  .container-fluid,
 .ai-integration-section .container-fluid,
 .operational-challenges-section .container-fluid,
@@ -2110,7 +2113,8 @@ span.counterNumber {
 /* Implementation Phases Section Styles */
 .implementation-phases-section {
     background: #f8f9fa;
-    padding: 10px 0;
+    padding: 2.5rem 0;
+    padding-bottom: 3.2rem;
 }
 
 .implementation-phases-container {
