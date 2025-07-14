@@ -499,8 +499,8 @@ span.counterNumber {
 }
 
 .problem-title {
-    font-size: 48px;
-    font-weight: 700;
+    font-size: 42px;
+    font-weight: 400;
     color: white;
     line-height: 1.2;
     margin-bottom: 30px;
@@ -914,9 +914,26 @@ span.counterNumber {
     }
 }
 
+.layered-background {
+  /* position: absolute; */
+  inset: 0; /* shorthand for top: 0; right: 0; bottom: 0; left: 0; */
+  background-image:
+    linear-gradient(to bottom right, #111827, #1f2937, #000),
+    radial-gradient(circle at 30% 50%, rgba(249, 115, 22, 0.1), transparent 70%),
+    radial-gradient(circle at 70% 80%, rgba(37, 99, 235, 0.08), transparent 70%);
+  background-blend-mode: overlay;
+  z-index: -1; /* optional, places it behind other content */
+}
+
+.checked-overlay {
+  background-image: url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23f97316' fill-opacity='0.06'%3E%3Cpath d='M20 20c0-5.5-4.5-10-10-10s-10 4.5-10 10 4.5 10 10 10 10-4.5 10-10zm10 0c0-5.5-4.5-10-10-10s-10 4.5-10 10 4.5 10 10 10 10-4.5 10-10z'/%3E%3C/g%3E%3C/svg%3E");
+  background-size: 40px 40px;
+  pointer-events: none; /* optional: lets clicks pass through */
+}
+
 /* Max-width constraints for all main content sections */
 .hero-section .container-fluid,
-.problem-section .container-fluid,
+ .container-fluid,
 .ai-integration-section .container-fluid,
 .operational-challenges-section .container-fluid,
 .success-story-sec1,
@@ -1811,7 +1828,7 @@ span.counterNumber {
 /* Project Challenges Section Styles */
 .project-challenges-section {
     padding: 80px 0;
-    max-width: 1200px;
+    /* max-width: 1200px; */
     margin: 0 auto;
 }
 
@@ -1832,8 +1849,8 @@ span.counterNumber {
 }
 
 .challenge-section-title {
-    font-size: 36px;
-    font-weight: 700;
+    font-size: 3rem;
+    font-weight: 400;
     line-height: 1.3;
     max-width: 900px;
     margin: 0 auto 20px;
