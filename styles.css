@@ -2040,6 +2040,7 @@ span.counterNumber {
     /* border-radius: 25px; */
     padding: 50px 40px;
     color: white;
+    align-items: center;
     text-align: center;
     border-radius: 30px;
     box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
@@ -2120,7 +2121,7 @@ span.counterNumber {
 
 /* Implementation Phases Section Styles */
 .implementation-phases-section {
-    background: #f8f9fa;
+    background: #f2f5fd;
     padding: 2.5rem 0;
     padding-bottom: 3.2rem;
     align-items: center;
@@ -2128,46 +2129,64 @@ span.counterNumber {
 }
 
 .implementation-phases-container {
-    max-width: 1300px;
-    background: #ffffff;
-    border-radius: 24px;
-    padding: 60px 30px;
+    max-width: 1100px;
     margin: 0 auto;
+    padding: 80px 20px;
+    background: #f8f9fa;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 25px;
     text-align: center;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+.deployment-strategy-badge {
+    display: inline-flex;
+    align-items: center;
+    background-color: #FFF1EC;
+    color: #FF5722;
+    font-weight: 600;
+    font-size: 14px;
+    margin: 0 auto;
+    padding: 8px 16px;
+    border-radius: 30px;
+    margin-bottom: 24px;
+}
+
+.deployment-strategy-badge span {
+    display: flex;
+    align-items: center;
 }
 
 .implementation-phases-title {
     font-size: 36px;
-    font-weight: 300;
-    color: #1a202c;
+    font-weight: 700;
     margin-bottom: 16px;
+    color: #0F172A;
 }
 
 .implementation-phases-description {
     font-size: 16px;
-    color: #4a5568;
+    color: #64748B;
+    max-width: 700px;
+    margin: 0 auto 40px;
     line-height: 1.6;
-    max-width: 800px;
-    margin: 0 auto 50px;
 }
 
 .phases-row {
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: center;
     align-items: flex-start;
     margin-bottom: 60px;
-    flex-wrap: nowrap;
-    padding: 0 20px;
 }
 
 .phase-card {
-    background: #ffffff;
-    border: 1px solid #e2e8f0;
+    background: white;
     border-radius: 12px;
     padding: 24px 16px;
     width: 22%;
-    min-height: 300px;
+    min-height: 100%;
     display: flex;
     flex-direction: column;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -2180,17 +2199,18 @@ span.counterNumber {
 }
 
 .phase-icon {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    background: #ff6b35;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0 auto 15px;
-    color: white;
     display: flex;
     flex-direction: row;
+    align-items: center;
+    color: orangered;
+    gap: 12px;
+}
+
+.phase-title {
+    font-weight: 600;
+    font-style: 'Sora', sans-serif;
+    font-size: 16px;
+    margin-top: 12px;
 }
 
 .phase-number {
@@ -2225,24 +2245,23 @@ span.counterNumber {
     margin: 0;
 }
 
-phase-description {
+.phase-description {
     font-size: 14px;
-    color: #718096;
-    line-height: 1.6;
-    margin: 0;
-    flex-grow: 1;
+    color: #64748B;
+    line-height: 1.5;
 }
 
 .phase-arrow {
     display: flex;
     align-items: center;
-    color: #cbd5e0;
-    width: 2%;
+    margin: 0 -10px;
+    padding: 60px 10px 0;
 }
 
 .implementation-stats-row {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    flex-wrap: wrap;
     gap: 24px;
     margin-top: 40px;
     max-width: 1000px;
@@ -2252,8 +2271,7 @@ phase-description {
 .implementation-stat-card {
     background: #f7fafc;
     border-radius: 12px;
-    padding: 24px;
-    width: 30%;
+    padding: 24px 40px;
     text-align: center;
     transition: transform 0.3s ease;
 }
@@ -2263,23 +2281,23 @@ phase-description {
 }
 
 .stat-card-orange {
-    background: #FFEEE6;
+    background-color: #fdf4ef;
 }
 
 .stat-card-blue {
-    background: #E6F0FF;
+    background-color: #f0f4ff;
 }
 
 .stat-card-green {
-    background: #E6FAF0;
+    background-color: #edfdf4;
+
 }
 
 .stat-number {
-    font-size: 36px;
+    font-size: 32px;
     font-weight: 700;
-    color: #1a202c;
     margin-bottom: 8px;
-    font-family: 'Satoshi', sans-serif;
+    color: #0F172A;
 }
 
 .stat-label {
@@ -2289,7 +2307,7 @@ phase-description {
     line-height: 1.4;
 }
 
-@media (max-width: 992px) {
+@media (max-width: 768px) {
     .phases-row {
         flex-wrap: wrap;
         justify-content: center;
@@ -2300,7 +2318,7 @@ phase-description {
         width: 45%;
         margin-bottom: 20px;
     }
-
+    
     .phase-arrow {
         display: none;
     }
@@ -2308,7 +2326,7 @@ phase-description {
     .implementation-stats-row {
         flex-wrap: wrap;
     }
-
+    
     .implementation-stat-card {
         width: 100%;
         margin-bottom: 16px;
