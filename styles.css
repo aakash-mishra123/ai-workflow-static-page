@@ -922,6 +922,9 @@ img {
     border-radius: 20px;
     padding: 20px 40px;
     border: 1px solid #ff6a2f;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
 }
 
 .results-title {
@@ -1010,6 +1013,101 @@ img {
     
     .metric-value {
         font-size: 2.5rem;
+    }
+}
+
+/* Scroll Animations */
+.scroll-animate {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+    filter: blur(5px);
+}
+
+.scroll-animate.animate-in {
+    opacity: 1;
+    transform: translateY(0);
+    filter: blur(0);
+}
+
+/* Staggered animations for cards */
+.scroll-animate-card {
+    opacity: 0;
+    transform: translateY(30px) scale(0.95);
+    transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+    filter: blur(3px);
+}
+
+.scroll-animate-card.animate-in {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+    filter: blur(0);
+}
+
+/* Delay classes for staggered effect */
+.delay-1 { transition-delay: 0.1s; }
+.delay-2 { transition-delay: 0.2s; }
+.delay-3 { transition-delay: 0.3s; }
+.delay-4 { transition-delay: 0.4s; }
+
+/* Challenge Section Animation */
+.challenge-section.scroll-animate {
+    transform: translateX(-50px);
+}
+
+.challenge-section.scroll-animate.animate-in {
+    transform: translateX(0);
+}
+
+/* Critical Details Animation */
+.critical-details-section.scroll-animate {
+    transform: translateY(40px) scale(0.98);
+}
+
+.critical-details-section.scroll-animate.animate-in {
+    transform: translateY(0) scale(1);
+}
+
+/* Image loading animation */
+img {
+    transition: opacity 0.3s ease;
+}
+
+img:not(.loaded) {
+    opacity: 0.7;
+}
+
+img.loaded {
+    opacity: 1;
+}
+
+/* Enhanced button animations */
+.custom-orange-btn, .custom-outline-btn {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.custom-orange-btn:hover {
+    transform: translateY(-2px) scale(1.02);
+    box-shadow: 0 8px 25px rgba(255, 106, 47, 0.3);
+}
+
+.custom-outline-btn:hover {
+    transform: translateY(-2px) scale(1.02);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+/* Reduce motion for users who prefer it */
+@media (prefers-reduced-motion: reduce) {
+    .scroll-animate,
+    .scroll-animate-card {
+        transition: opacity 0.3s ease;
+        transform: none !important;
+        filter: none !important;
+    }
+    
+    .scroll-animate.animate-in,
+    .scroll-animate-card.animate-in {
+        opacity: 1;
     }
 }
 
@@ -2087,7 +2185,7 @@ img {
 
 @media (max-width: 991.98px) {
     .section-padding {
-        /* padding: 80px 0; */
+        padding: 80px 0;
     }
     
     .hero-section {
