@@ -12,7 +12,7 @@
 }
 
 .pad120 {
-    padding: 120px 240px !important;
+    padding: 80px 240px !important;
 }
 
 .case-study-badge.custom-badge {
@@ -348,9 +348,6 @@ img {
     padding: 0 15px;
 }
 
-.section-padding {
-    padding: 100px 0;
-}
 
 .bg-light {
     background-color: var(--bg-light);
@@ -561,7 +558,7 @@ img {
 
 /* Challenge Cards Section */
 .challenge-cards-section {
-    background: #fff;
+    background: #f8fafc;
     padding: 80px 120px;
 }
 
@@ -650,8 +647,7 @@ img {
 
 /* Critical Details Section */
 .critical-details-section {
-    background: #fef7f0;
-    padding: 20px 0;
+    background: white;
     border-radius: 16px;
 }
 
@@ -2091,7 +2087,7 @@ img {
 
 @media (max-width: 991.98px) {
     .section-padding {
-        padding: 80px 0;
+        /* padding: 80px 0; */
     }
     
     .hero-section {
