@@ -15,12 +15,12 @@
 <body>
     <!-- Hero Section -->
     <section class="hero-section pad120">
-        <div class="container">
+        <div class="container" style="display: flex; flex-direction: row; gap: 150px;">
             <div class="row align-items-center">
-                <div id="professional_left_section" class="col-lg-6">
+                <div id="professional_left_section">
                     <div class="hero-content">
                         <div class="case-study-badge custom-badge">
-                             <span class="dot"></span>
+                            <span class="dot"></span>
                             Case Study
                         </div>
                         <p class="hero-title">
@@ -53,73 +53,85 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="hero-buttons mt-4">
-                            <a href="#" class="btn  custom-orange-btn">View Full Study</a>
-                            <a href="#" class="btn custom-outline-btn">Contact OrangeMantra</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6">
-                    <div class="hero-image">
-                        <div class="voice-search-indicator">
-                            <img src="./assets/buttonpics/donut.png" width="28" height="28" alt="Voice Search Active">
-                            <div style="display: flex; flex-direction: column; align-items: left;">
-                                <span>Voice Search Active</span>
-                                <div class="listening-text" style="font-size: 16px;">Listening...</div>
-                            </div>
-                        </div>
-                        <img src="./assets/professionalImages/consultation.jpeg" alt="Case Study Hero"
-                            class="img-fluid">
+                        <div class="" style="display: flex; flex-direction: row; gap: 16px;">
 
-                        <div class="voice-search-indicator-corner">
-                            <img src="./assets/buttonpics/donut.png" width="28" height="28" alt="Voice Search Active">
-                            <div style="display: flex; flex-direction: column; align-items: left;">
-                                <span>85% Match</span>
-                                <div class="listening-text" style="font-size: 16px;">Found 124 Results</div>
+
+                            <div class="hero-buttons">
+                                <a href="#" class="btn  custom-orange-btn">View Full Study
+
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                        strokeWidth={2} stroke="currentColor" width="28" height="16" weight="bold">
+                                        <path strokeLinecap="round" strokeLinejoin="round"
+                                            d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+                                    </svg>
+                                </a>
                             </div>
+                            <a href="#" class="btn custom-outline-btn" style="margin: 0; height: 48px;">Contact OrangeMantra</a>
+
                         </div>
                     </div>
                 </div>
             </div>
-
-            <!-- professional project Section -->
-            <section class="project-overview-section">
-                <div class="container">
-                    <div class="row align-items-center">
-                        <div class="col-lg-8">
-                            <div class="project-overview-content">
-                                <div class="overview-header">
-                                    <div class="overview-icon">🔗</div>
-                                    <h2 class="overview-title">Project Overview</h2>
-                                </div>
-                                <p class="overview-description">
-                                    A fast-growing fashion-tech startup set out to reimagine how users discover fashion
-                                    online. Their vision: eliminate clunky filters and rigid keyword searches by
-                                    enabling natural, voice-based product discovery.
-                                </p>
-                                <p class="overview-description">
-                                    OrangeMantra partnered with them to build an AI-powered mobile shopping experience
-                                    that seamlessly blends conversational search, visual intelligence, and real-time
-                                    product aggregation.
-                                </p>
-                                <div class="tech-tags">
-                                    <span class="tech-tag">AI/ML</span>
-                                    <span class="tech-tag">Voice Recognition</span>
-                                    <span class="tech-tag">eCommerce</span>
-                                    <span class="tech-tag">Mobile First</span>
-                                    <span class="tech-tag">Real-time API</span>
-                                </div>
-                            </div>
+            <div class="col-lg-6">
+                <div class="hero-image">
+                    <div class="voice-search-indicator">
+                        <img src="./assets/buttonpics/donut.png" width="28" height="28" alt="Voice Search Active">
+                        <div style="display: flex; flex-direction: column; align-items: left;">
+                            <span>Voice Search Active</span>
+                            <div class="listening-text" style="font-size: 16px;">Listening...</div>
                         </div>
-                        <div class="col-lg-4">
-                            <div class="overview-image">
-                                <img src="./assets/professionalImages/img10.jpeg" alt="Dashboard Analytics"
-                                    class="img-fluid">
-                            </div>
+                    </div>
+                    <img src="./assets/professionalImages/consultation.jpeg" alt="Case Study Hero" class="img-fluid">
+
+                    <div class="voice-search-indicator-corner">
+                        <img src="./assets/buttonpics/donut.png" width="28" height="28" alt="Voice Search Active">
+                        <div style="display: flex; flex-direction: column; align-items: left;">
+                            <span>85% Match</span>
+                            <div class="listening-text" style="font-size: 16px;">Found 124 Results</div>
                         </div>
                     </div>
                 </div>
-            </section>
+            </div>
+        </div>
+
+        <!-- professional project Section -->
+        <section class="project-overview-section">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-8">
+                        <div class="project-overview-content">
+                            <div class="overview-header">
+                                <div class="overview-icon">🔗</div>
+                                <h2 class="overview-title">Project Overview</h2>
+                            </div>
+                            <p class="overview-description">
+                                A fast-growing fashion-tech startup set out to reimagine how users discover fashion
+                                online. Their vision: eliminate clunky filters and rigid keyword searches by
+                                enabling natural, voice-based product discovery.
+                            </p>
+                            <p class="overview-description">
+                                OrangeMantra partnered with them to build an AI-powered mobile shopping experience
+                                that seamlessly blends conversational search, visual intelligence, and real-time
+                                product aggregation.
+                            </p>
+                            <div class="tech-tags">
+                                <span class="tech-tag">AI/ML</span>
+                                <span class="tech-tag">Voice Recognition</span>
+                                <span class="tech-tag">eCommerce</span>
+                                <span class="tech-tag">Mobile First</span>
+                                <span class="tech-tag">Real-time API</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="overview-image">
+                            <img src="./assets/professionalImages/img10.jpeg" alt="Dashboard Analytics"
+                                class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
         </div>
     </section>
 
@@ -222,52 +234,52 @@
     <!-- critical details section -->
     <section class=" critical-details-section pad120 scroll-animate">
         <div class="container" style="margin-top: -80px;">
-    
-        <div class="row align-items-center"
-            style="border: 1px solid orangered; border-radius: 25px; padding: 20px 40px; background-color: #fef7f0;">
-            <div class="col-lg-8">
-                <div class="critical-content">
-                    <div class="critical-badge">
-                        <span class="warning-icon">⚠️</span>
-                        <span>Critical Issues Identified</span>
-                    </div>
-                    <div class="critical-issues-grid">
-                        <div class="row">
-                            <div class="col-md-6 mb-3">
-                                <div class="issue-item">
-                                    <span class="bullet-point" style="color: #ff6b35; font-size: 1.5rem;">●</span>
-                                    <span class="issue-text">Difficulty expressing visual preferences</span>
+
+            <div class="row align-items-center"
+                style="border: 1px solid orangered; border-radius: 25px; padding: 20px 40px; background-color: #fef7f0;">
+                <div class="col-lg-8">
+                    <div class="critical-content">
+                        <div class="critical-badge">
+                            <span class="warning-icon">⚠️</span>
+                            <span>Critical Issues Identified</span>
+                        </div>
+                        <div class="critical-issues-grid">
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <div class="issue-item">
+                                        <span class="bullet-point" style="color: #ff6b35; font-size: 1.5rem;">●</span>
+                                        <span class="issue-text">Difficulty expressing visual preferences</span>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="col-md-6 mb-3">
-                                <div class="issue-item">
-                                    <span class="bullet-point" style="color: #ff6b35; font-size: 1.5rem;">●</span>
-                                    <span class="issue-text">Time wasted switching between apps</span>
+                                <div class="col-md-6 mb-3">
+                                    <div class="issue-item">
+                                        <span class="bullet-point" style="color: #ff6b35; font-size: 1.5rem;">●</span>
+                                        <span class="issue-text">Time wasted switching between apps</span>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="col-md-6 mb-3">
-                                <div class="issue-item">
-                                    <span class="bullet-point" style="color: #ff6b35; font-size: 1.5rem;">●</span>
-                                    <span class="issue-text" >Lack of personalized suggestions</span>
+                                <div class="col-md-6 mb-3">
+                                    <div class="issue-item">
+                                        <span class="bullet-point" style="color: #ff6b35; font-size: 1.5rem;">●</span>
+                                        <span class="issue-text">Lack of personalized suggestions</span>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="col-md-6 mb-3">
-                                <div class="issue-item">
-                                    <span class="bullet-point" style="color: #ff6b35; font-size: 1.5rem;">●</span>
-                                    <span class="issue-text">Poor search result relevance</span>
+                                <div class="col-md-6 mb-3">
+                                    <div class="issue-item">
+                                        <span class="bullet-point" style="color: #ff6b35; font-size: 1.5rem;">●</span>
+                                        <span class="issue-text">Poor search result relevance</span>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-lg-4">
-                <div class="critical-image">
-                    <img src="./assets/professionalImages/img10.jpeg" alt="Analytics Dashboard" class="img-fluid">
+                <div class="col-lg-4">
+                    <div class="critical-image">
+                        <img src="./assets/professionalImages/img10.jpeg" alt="Analytics Dashboard" class="img-fluid">
+                    </div>
                 </div>
             </div>
-        </div>
-            
+
         </div>
     </section>
 
@@ -368,28 +380,28 @@
             </div>
 
             <div class="solution-results scroll-animate row">
-                        <div class="col-lg-8 align-items-center" style="padding: auto 0px;">
-                            <h3 class="results-title">The Result: A Complete Shopping Revolution</h3>
-                            <div class="metrics-row">
-                                <div class="metric-item">
-                                    <div class="metric-value orange">70%</div>
-                                    <div class="metric-label">Less User Effort</div>
-                                </div>
-                                <div class="metric-item">
-                                    <div class="metric-value orange">85%</div>
-                                    <div class="metric-label">Match Accuracy</div>
-                                </div>
-                                <div class="metric-item">
-                                    <div class="metric-value orange">3x</div>
-                                    <div class="metric-label">Faster Discovery</div>
-                                </div>
-                            </div>
+                <div class="col-lg-8 align-items-center" style="padding: auto 0px;">
+                    <h3 class="results-title">The Result: A Complete Shopping Revolution</h3>
+                    <div class="metrics-row">
+                        <div class="metric-item">
+                            <div class="metric-value orange">70%</div>
+                            <div class="metric-label">Less User Effort</div>
                         </div>
-                        <div class="col-lg-4">
-                            <div class="results-dashboard">
-                                <img src="./assets/professionalImages/img10.jpeg" alt="Analytics Dashboard" class="img-fluid">
-                            </div>
+                        <div class="metric-item">
+                            <div class="metric-value orange">85%</div>
+                            <div class="metric-label">Match Accuracy</div>
                         </div>
+                        <div class="metric-item">
+                            <div class="metric-value orange">3x</div>
+                            <div class="metric-label">Faster Discovery</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="results-dashboard">
+                        <img src="./assets/professionalImages/img10.jpeg" alt="Analytics Dashboard" class="img-fluid">
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -689,13 +701,15 @@
             </div>
 
             <!-- Success Factors Section -->
-            <div class="success-factors-section" style="background-color: #fef7f0; border-radius: 25px; padding: 50px 40px; margin-top: 60px;">
+            <div class="success-factors-section"
+                style="background-color: #fef7f0; border-radius: 25px; padding: 50px 40px; margin-top: 60px;">
                 <div class="success-container">
                     <div class="row align-items-center">
                         <div class="col-lg-6">
                             <div class="success-content">
                                 <div class="success-badge">
-                                    <span class="key-icon" style="background: rgba(255, 106, 47, 0.2); padding: 8px; border-radius: 8px;">👑</span>
+                                    <span class="key-icon"
+                                        style="background: rgba(255, 106, 47, 0.2); padding: 8px; border-radius: 8px;">👑</span>
                                     <span>Key Success Factors</span>
                                 </div>
                                 <p class="success-description">
@@ -708,8 +722,12 @@
                                             <div class="factor-item">
                                                 <div class="factor-icon">🎯</div>
                                                 <div class="factor-content">
-                                                    <h4 class="factor-title" style="font-size: 1rem; font-weight: 600; margin: 0 0 4px 0; color: #333;">User-Centric Design</h4>
-                                                    <p class="factor-text" style="font-size: 0.9rem; color: #666; margin: 0;">Natural interaction patterns</p>
+                                                    <h4 class="factor-title"
+                                                        style="font-size: 1rem; font-weight: 600; margin: 0 0 4px 0; color: #333;">
+                                                        User-Centric Design</h4>
+                                                    <p class="factor-text"
+                                                        style="font-size: 0.9rem; color: #666; margin: 0;">Natural
+                                                        interaction patterns</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -717,8 +735,12 @@
                                             <div class="factor-item">
                                                 <div class="factor-icon">🤖</div>
                                                 <div class="factor-content">
-                                                    <h4 class="factor-title" style="font-size: 1rem; font-weight: 600; margin: 0 0 4px 0; color: #333;">Advanced AI Integration</h4>
-                                                    <p class="factor-text" style="font-size: 0.9rem; color: #666; margin: 0;">NLP and computer vision</p>
+                                                    <h4 class="factor-title"
+                                                        style="font-size: 1rem; font-weight: 600; margin: 0 0 4px 0; color: #333;">
+                                                        Advanced AI Integration</h4>
+                                                    <p class="factor-text"
+                                                        style="font-size: 0.9rem; color: #666; margin: 0;">NLP and
+                                                        computer vision</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -726,8 +748,12 @@
                                             <div class="factor-item">
                                                 <div class="factor-icon">📱</div>
                                                 <div class="factor-content">
-                                                    <h4 class="factor-title" style="font-size: 1rem; font-weight: 600; margin: 0 0 4px 0; color: #333;">Mobile-First Approach</h4>
-                                                    <p class="factor-text" style="font-size: 0.9rem; color: #666; margin: 0;">Optimized for mobile</p>
+                                                    <h4 class="factor-title"
+                                                        style="font-size: 1rem; font-weight: 600; margin: 0 0 4px 0; color: #333;">
+                                                        Mobile-First Approach</h4>
+                                                    <p class="factor-text"
+                                                        style="font-size: 0.9rem; color: #666; margin: 0;">Optimized for
+                                                        mobile</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -735,8 +761,12 @@
                                             <div class="factor-item">
                                                 <div class="factor-icon">🔄</div>
                                                 <div class="factor-content">
-                                                    <h4 class="factor-title" style="font-size: 1rem; font-weight: 600; margin: 0 0 4px 0; color: #333;">Real-time Processing</h4>
-                                                    <p class="factor-text" style="font-size: 0.9rem; color: #666; margin: 0;">Instant aggregation</p>
+                                                    <h4 class="factor-title"
+                                                        style="font-size: 1rem; font-weight: 600; margin: 0 0 4px 0; color: #333;">
+                                                        Real-time Processing</h4>
+                                                    <p class="factor-text"
+                                                        style="font-size: 0.9rem; color: #666; margin: 0;">Instant
+                                                        aggregation</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -746,14 +776,20 @@
                         </div>
                         <div class="col-lg-6">
                             <div class="success-achievement-image" style="position: relative;">
-                                <div class="project-success-overlay" style="position: absolute; bottom: 20px; left: 60px; right: 20px; background: white; text-align: center; backdrop-filter: blur(10px);">
-                                    <div class="achievement-badge" style="display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 4px;">
+                                <div class="project-success-overlay"
+                                    style="position: absolute; bottom: 20px; left: 60px; right: 20px; background: white; text-align: center; backdrop-filter: blur(10px);">
+                                    <div class="achievement-badge"
+                                        style="display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 4px;">
                                         <span class="trophy-icon" style="font-size: 1.5rem;">🏆</span>
-                                        <span style="font-weight: 600; color: #333; font-size: 10px;">Project Success</span>
+                                        <span style="font-weight: 600; color: #333; font-size: 10px;">Project
+                                            Success</span>
                                     </div>
-                                    <p class="achievement-text" style="margin: 0; font-size: 0.85rem; color: #666;">Award-winning innovation</p>
+                                    <p class="achievement-text" style="margin: 0; font-size: 0.85rem; color: #666;">
+                                        Award-winning innovation</p>
                                 </div>
-                                <img src="./assets/professionalImages/img10.jpeg" alt="Project Success" class="img-fluid" style="min-width: 80%; min-height: 60%; object-fit: cover; border-radius: 16px;">
+                                <img src="./assets/professionalImages/img10.jpeg" alt="Project Success"
+                                    class="img-fluid"
+                                    style="min-width: 80%; min-height: 60%; object-fit: cover; border-radius: 16px;">
                             </div>
                         </div>
                     </div>
@@ -765,20 +801,27 @@
     <!-- Upgrade Business Section -->
     <section class="upgrade-business-section pad120">
         <div class="container">
-            <div class="upgrade-container" style="background: linear-gradient(135deg, #1a2237 0%, #1a2237 50%, #1a2237 100%); border-radius: 25px; padding: 20px 60px; position: relative; overflow: hidden;">
+            <div class="upgrade-container"
+                style="background: linear-gradient(135deg, #1a2237 0%, #1a2237 50%, #1a2237 100%); border-radius: 25px; padding: 20px 60px; position: relative; overflow: hidden;">
                 <div class="row align-items-center">
                     <div class="col-lg-7">
                         <div class="upgrade-content">
-                            <h2 class="upgrade-title" style="color: white; font-size: 1.5rem; font-weight: 400; margin-bottom: 20px;">Ready to Transform Your Business?</h2>
-                            <p class="upgrade-description" style="color: #e0e0e0; font-size: 1.1rem; margin-bottom: 40px; line-height: 1.6;">
-                                Let OrangeMantra discuss how AI-powered solutions can revolutionize your customer experience and drive measurable business growth.
+                            <h2 class="upgrade-title"
+                                style="color: white; font-size: 1.5rem; font-weight: 400; margin-bottom: 20px;">Ready to
+                                Transform Your Business?</h2>
+                            <p class="upgrade-description"
+                                style="color: #e0e0e0; font-size: 1.1rem; margin-bottom: 40px; line-height: 1.6;">
+                                Let OrangeMantra discuss how AI-powered solutions can revolutionize your customer
+                                experience and drive measurable business growth.
                             </p>
                             <div class="upgrade-buttons" style="display: flex; gap: 20px; flex-wrap: wrap;">
-                                <a href="#" class="btn" style="background: #ff6b35; color: white; padding: 15px 30px; border-radius: 8px; text-decoration: none; font-weight: 500; border: none; display: inline-flex; align-items: center; gap: 8px;">
+                                <a href="#" class="btn"
+                                    style="background: #ff6b35; color: white; padding: 15px 30px; border-radius: 8px; text-decoration: none; font-weight: 500; border: none; display: inline-flex; align-items: center; gap: 8px;">
                                     Schedule a Consultation
                                     <span style="font-size: 1.2rem;">→</span>
                                 </a>
-                                <a href="#" class="btn" style="background: transparent; color: white; padding: 15px 30px; border: 2px solid white; border-radius: 8px; text-decoration: none; font-weight: 500; display: inline-flex; align-items: center;">
+                                <a href="#" class="btn"
+                                    style="background: transparent; color: white; padding: 15px 30px; border: 2px solid white; border-radius: 8px; text-decoration: none; font-weight: 500; display: inline-flex; align-items: center;">
                                     Contact OrangeMantra
                                 </a>
                             </div>
@@ -786,14 +829,17 @@
                     </div>
                     <div class="col-lg-5">
                         <div class="upgrade-image" style="position: relative;">
-                            <div class="image-overlay" style="position: absolute; bottom: 20px; left: 20px; right: 20px; background: rgba(0,0,0,0.6); color: white; padding: 20px; border-radius: 15px; text-align: center; z-index: 2; backdrop-filter: blur(15px); -webkit-backdrop-filter: blur(10px);">
-                                <div style="display: flex; align-items: center; justify-content: center; gap: 10px; margin-bottom: 8px;">
+                            <div class="image-overlay"
+                                style="position: absolute; bottom: 20px; left: 20px; right: 20px; background: rgba(0,0,0,0.6); color: white; padding: 20px; border-radius: 15px; text-align: center; z-index: 2; backdrop-filter: blur(15px); -webkit-backdrop-filter: blur(10px);">
+                                <div
+                                    style="display: flex; align-items: center; justify-content: center; gap: 10px; margin-bottom: 8px;">
                                     <span style="font-size: 1.5rem;">🚀</span>
                                     <span style="font-weight: 600; font-size: 1.1rem;">Let's Build Together</span>
                                 </div>
                                 <p style="margin: 0; font-size: 0.9rem; color: #e0e0e0;">Your next AI innovation</p>
                             </div>
-                            <img src="./assets/professionalImages/consultation.jpeg" alt="Team Collaboration" class="img-fluid" style="border-radius: 8px; width: 100%; height: 100%;">
+                            <img src="./assets/professionalImages/consultation.jpeg" alt="Team Collaboration"
+                                class="img-fluid" style="border-radius: 8px; width: 100%; height: 100%;">
                         </div>
                     </div>
                 </div>
