@@ -18,11 +18,11 @@
 .case-study-badge.custom-badge {
     display: inline-block;
     background: transparent;
-    color: #fff;
-    font-weight: 600;
-    font-size: 16px;
+    color: #ff6a2f;
+    font-weight: 800;
+    font-size: 12px;
     border-radius: 8px;
-    padding: 6px 18px;
+    padding: 8px 18px;
     border-radius: var(--border-radius);
     overflow: hidden;
     box-shadow: var(--box-shadow);
@@ -30,6 +30,7 @@
     height: 80%;
     position: relative;
     border: 1px solid #ff6a2f;
+    margin-bottom: 12px;
 }
 
 .voice-search-indicator {
@@ -167,9 +168,9 @@
     height: auto;
 }
 
-.case-study-badge.custom-badge {
+/* .case-study-badge.custom-badge {
     display: inline-block;
-    background: #ff6a2f;
+    background: transparent;
     color: #fff;
     font-weight: 600;
     font-size: 16px;
@@ -178,7 +179,7 @@
     margin-bottom: 28px;
     box-shadow: 0 2px 8px rgba(0,0,0,0.08);
     letter-spacing: 0.5px;
-}
+} */
 
 .hero-title {
     font-size: 16px;
@@ -937,7 +938,7 @@ img {
 
 .metrics-row {
     display: flex;
-    gap: 0px;
+    gap: 20px;
     align-items: center;
 }
 
@@ -1449,15 +1450,15 @@ img.loaded {
 }
 
 .impact-main-title {
-    font-size: 3rem;
-    font-weight: 700;
+    font-size: 1.2rem;
+    font-weight: 400;
     color: #1e293b;
     margin-bottom: 20px;
     line-height: 1.2;
 }
 
 .impact-main-description {
-    font-size: 1.2rem;
+    font-size: 0.9rem;
     color: #64748b;
     margin-bottom: 0;
     line-height: 1.6;
@@ -1655,15 +1656,15 @@ img.loaded {
 .success-badge {
     display: inline-flex;
     align-items: center;
-    gap: 8px;
-    background: rgba(255, 106, 47, 0.2);
-    border: 1px solid #ff6a2f;
+    gap: 12px;
+    /* background: rgba(255, 106, 47, 0.2); */
+    /* border: 1px solid #ff6a2f; */
     border-radius: 25px;
-    padding: 8px 20px;
+    /* padding: 8px 20px; */
     font-size: 14px;
     font-weight: 500;
     color: black;
-    margin-bottom: 24px;
+    margin-bottom: 12px;
 }
 
 .key-icon {
@@ -1672,9 +1673,9 @@ img.loaded {
 
 .success-description {
     font-size: 1.1rem;
-    color: #64748b;
+    color: #5e6b7c;
     line-height: 1.6;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 
 .success-factors-grid {
@@ -1683,8 +1684,9 @@ img.loaded {
 
 .factor-item {
     display: flex;
+    flex-direction: column;
     align-items: center;
-    gap: 15px;
+    /* gap: 15px; */
     padding: 20px;
     background: white;
     border-radius: 12px;
@@ -1697,7 +1699,7 @@ img.loaded {
 }
 
 .factor-icon {
-    background: #ff6a2f;
+    /* background: #ff6a2f; */
     color: white;
     border-radius: 50%;
     width: 50px;
@@ -1705,8 +1707,9 @@ img.loaded {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 20px;
+    font-size: 2rem;
     flex-shrink: 0;
+    margin-bottom: 16px;
 }
 
 .factor-content {
@@ -1728,15 +1731,15 @@ img.loaded {
 
 .success-achievement-image {
     position: relative;
-    border-radius: 15px;
     overflow: hidden;
+    border-radius: 16px;
 }
 
-.success-achievement-image img {
-    width: 100%;
-    height: auto;
-    border-radius: 15px;
-}
+/* .success-achievement-image img {
+    min-width: 100%;
+    width: 800px;
+    height: 50%;
+} */
 
 .project-success-overlay {
     position: absolute;
@@ -1744,20 +1747,21 @@ img.loaded {
     left: 0;
     right: 0;
     background: linear-gradient(transparent, rgba(0, 0, 0, 0.8));
-    padding: 30px 20px 20px;
+    padding: 12px;
     color: white;
+    width: 65%;
+    border-radius: 12px;
 }
 
 .achievement-badge {
     display: inline-flex;
     align-items: center;
     gap: 8px;
-    background: rgba(255, 106, 47, 0.9);
+    /* background: rgba(255, 106, 47, 0.9); */
     border-radius: 20px;
     padding: 6px 14px;
     font-size: 12px;
     font-weight: 600;
-    margin-bottom: 10px;
 }
 
 .trophy-icon {
@@ -1782,7 +1786,7 @@ img.loaded {
     
     .success-content {
         padding-right: 0;
-        margin-bottom: 30px;
+        /* margin-bottom: 30px; */
     }
     
     .metrics-grid {
