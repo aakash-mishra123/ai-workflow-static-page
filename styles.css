@@ -17,7 +17,7 @@
 
 .case-study-badge.custom-badge {
     display: inline-block;
-    background: transparent;
+    background: #312b37;
     color: #ff6a2f;
     font-weight: 800;
     font-size: 12px;
@@ -28,10 +28,20 @@
     box-shadow: var(--box-shadow);
     max-width: 700px;
     height: 80%;
+    align-items: center;
     position: relative;
     border: 1px solid #ff6a2f;
     margin-bottom: 12px;
 }
+
+.dot {
+      width: 8px;
+      height: 8px;
+      margin-right: 8px;
+      background-color: #ff6a2f;
+      border-radius: 50%;
+      display: inline-block;
+    }
 
 .voice-search-indicator {
     position: absolute;
@@ -204,7 +214,7 @@
 
 .metrics-row {
     margin-bottom: 40px;
-    gap: 20px;
+    gap: 40px;
 }
 
 .custom-metric.metric-card {
@@ -584,21 +594,26 @@ img {
 }
 
 .challenge-detail-card .card-image img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 300ms;
+}
+
+.challenge-detail-card .card-image:hover img {
+  transform: scale(1.05);
 }
 
 .challenge-number {
     position: absolute;
-    top: 16px;
+    bottom: 16px;
     left: 16px;
-    background: rgba(255, 255, 255, 0.95);
-    color: #64748b;
+    background: transparent;
+    color: white;
     padding: 6px 12px;
     border-radius: 20px;
     font-weight: 500;
-    font-size: 14px;
+    font-size: 16px;
     backdrop-filter: blur(10px);
     z-index: 10;
 }
@@ -650,6 +665,7 @@ img {
 .critical-details-section {
     background: white;
     border-radius: 16px;
+
 }
 
 .critical-content {
@@ -660,17 +676,18 @@ img {
     display: inline-flex;
     align-items: center;
     gap: 8px;
-    background: rgba(255, 106, 47, 0.1);
-    color: #ff6a2f;
+    background: transparent;
+    color: black;
     padding: 8px 16px;
     border-radius: 20px;
     font-weight: 500;
-    font-size: 14px;
-    margin-bottom: 32px;
+    font-size: 20px;
+    margin-bottom: 12px;
 }
 
 .warning-icon {
-    font-size: 16px;
+    font-size: 24px;
+    margin-right: 12px;
 }
 
 .critical-issues-grid {
@@ -680,9 +697,14 @@ img {
 .issue-item {
     display: flex;
     align-items: center;
-    gap: 12px;
+    /* gap: 12px; */
     margin-bottom: 20px;
-    padding: 4px 0;
+    padding: 20px 12px;
+    display: flex; 
+    align-items: flex-start; 
+    gap: 24px;
+    border-radius: 12px;
+    background-color: white;
 }
 
 .bullet-point {
@@ -693,10 +715,13 @@ img {
 }
 
 .issue-text {
-    font-size: 1rem;
+    font-size: 1.25rem;
     color: #1e293b;
     font-weight: 500;
     line-height: 1.5;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
 
 .critical-image {
